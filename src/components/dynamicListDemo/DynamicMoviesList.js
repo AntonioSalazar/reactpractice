@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import ImprovedCard from './ImprovedCard'
 
 class DynamicMoviesList extends Component{
   constructor(){
@@ -12,13 +13,17 @@ class DynamicMoviesList extends Component{
     }
   }
 
+  deleteMovieHandler = (movieIndex) =>{
+    
+  }
+
   render(){
     console.log(this.state.movies);
     return(
       <div>
         {
             this.state.movies.map((oneMovie, index) => {
-
+              return <ImprovedCard key={index} {...oneMovie}/>
             })
         }
       </div>
