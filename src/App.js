@@ -3,6 +3,7 @@ import './App.css';
 import Header from "./components/Header"
 import { listItems, MoviesList } from "./components/ListDemo"
 import DynamycMoviesList from "./components/dynamicListDemo/DynamicMoviesList"
+import TextareaAndSelectTagDemo from './components/dynamicListDemo/TextareaAndSelectTagDemo';
 
 
 class App extends Component {
@@ -16,6 +17,7 @@ class App extends Component {
         </div>
           <hr/>
           <DynamycMoviesList />
+          <TextareaAndSelectTagDemo />
       </div>
     );
   }
